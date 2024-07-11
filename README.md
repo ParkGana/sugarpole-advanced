@@ -20,4 +20,11 @@ npm create vite@latest . --template react-ts
 \> Select a framework: React  
 \> Select a variant: TypeScript
 
+<br />
+
+##### [ tailwindCSS 설정 ]
+
+npm install tailwindcss@latest postcss@latest autoprefixer@latest  
+npx tailwindcss init -p
+
 ---
