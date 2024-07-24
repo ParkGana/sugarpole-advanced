@@ -25,8 +25,7 @@ function App() {
                 </div>
             </div>
             <div className="grid grid-cols-2 bg-[#0f62fe] border-t-4 border-[#0f62fe] gap-1">
-                <Dicom value={'1'} />
-                <Dicom value={'2'} />
+                <Dicom />
             </div>
         </div>
     )

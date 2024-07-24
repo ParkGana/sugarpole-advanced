@@ -27,4 +27,13 @@ npm create vite@latest . --template react-ts
 npm install tailwindcss@latest postcss@latest autoprefixer@latest  
 npx tailwindcss init -p
 
+<br />
+
+##### [ Cornerstone.js 설정 ]
+
+npm install @cornerstonejs/core @cornerstonejs/tools @cornerstonejs/streaming-image-volume-loader  
+npm install @cornerstonejs/dicom-image-loader @cornerstonejs/calculate-suv  
+npm install dicom-parser dicomweb-client dcmjs  
+npm install @types/cornerstone-core
+
 ---
