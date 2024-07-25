@@ -1,24 +1,15 @@
-import { ApplyColormap, FlipH, FlipV, Invert, Reset, RotateDelta30, Zoom } from '../hooks/tool'
+import { useContext } from 'react'
+import { DicomContext } from '../hooks/context'
 
 function Skill({ value }: { value: string }) {
+    const { dispatch } = useContext(DicomContext)
+
     return (
         <div
             className="text-[#21272A] font-medium px-2 py-3 cursor-pointer"
-            onClick={
-                value === 'Zoom'
-                    ? Zoom
-                    : value === 'Flip H'
-                    ? FlipH
-                    : value === 'Flip V'
-                    ? FlipV
-                    : value === 'Rotate Delta 30'
-                    ? RotateDelta30
-                    : value === 'Invert'
-                    ? Invert
-                    : value === 'Apply Colormap'
-                    ? ApplyColormap
-                    : Reset
-            }
+            onClickCapture={() => {
+                dispatch({ type: value, payload: { input: null } })
+            }}
         >
             {value}
         </div>
